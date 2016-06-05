@@ -8,7 +8,7 @@ public:
 	int month;
 	int day;
 };
-class worker//ְ����š��������Ա𡢹��ʡ�����ʱ�䡢�μӹ���ʱ�������
+class worker//职工编号、姓名、性别、工资、出生时间、参加工作时间和年龄
 {
 public:
 	void setyear();
