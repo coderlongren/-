@@ -1,0 +1,26 @@
+class Rect
+{
+public:
+    Rect()      
+    {
+        p = new int(100);
+    }
+    Rect(const Rect& r)
+    {
+        width = r.width;
+        height = r.height;
+        p = new int;    
+        *p = *(r.p);
+    }
+    ~Rect()     
+    {
+        if(p != NULL)
+        {
+            delete p;
+        }
+    }
+private:
+    int width;
+    int height;
+    int *p;     
+};
